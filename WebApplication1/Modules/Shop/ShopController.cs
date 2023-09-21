@@ -16,14 +16,8 @@ public class ShopController : ControllerBase
         _shopService = shopService;
     }
 
-    [HttpPost("event")]
-    public async Task<ActionResult<CreateEventResponseDTO>> CreateEvent(CreateEventRequestDTO dto)
-    {
-        return StatusCode(501);
-    }
-
-    [HttpDelete("event/{id}")]
-    public async Task<ActionResult<CancelEventResponseDTO>> CancelEvent(int id, CancelEventRequestDTO dto)
+    [HttpPost("order")]
+    public async Task<ActionResult<BuyTicketResponseDTO>> CreateEvent(BuyTicketRequestDTO dto)
     {
         return StatusCode(501);
     }

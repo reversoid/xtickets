@@ -1,4 +1,4 @@
-﻿namespace XTickets.Modules.Shop.DTO;
+﻿namespace XTickets.Modules.Event.DTO;
 
 public class CreateEventRequestDTO
 {             
