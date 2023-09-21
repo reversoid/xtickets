@@ -3,9 +3,15 @@
 namespace XTickets.Configuration.Postgres;
 
 
+public class YourEntity
+{
+
+}
+
 public class PostgresContext : DbContext
 {
+    public DbSet<YourEntity> SomeEntities { get; set; }
+
     public PostgresContext(DbContextOptions<PostgresContext> options) : base(options) { }
 
-    public DbSet<YourEntity> Users { get; set; }
 }
