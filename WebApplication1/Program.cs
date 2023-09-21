@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using System.Net;
-using TodoApi.Services;
 using TodoApi.Shared.Utils;
+using XTickets.Modules.Tickets;
 
 var builder = WebApplication.CreateBuilder(args);
 
