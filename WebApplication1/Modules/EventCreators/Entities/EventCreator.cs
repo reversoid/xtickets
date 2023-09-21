@@ -1,9 +1,9 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace XTickets.Modules.Users.Entities;
+namespace XTickets.Modules.EventCreators.Entities;
 
-public class User
+public class EventCreator
 {
     public int Id { get; set; }
 
@@ -34,6 +34,8 @@ public class User
     [Required]
     [Column(TypeName = "varchar(192)")]
     public string ImageUrl { get; set; }
+
+    public bool Verified = false;
 
     public bool PhoneVerified = false;
 
