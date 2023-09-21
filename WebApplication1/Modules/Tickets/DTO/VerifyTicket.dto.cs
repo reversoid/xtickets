@@ -15,5 +15,6 @@ public class VerifyTicketRequestDTO
 
 public class VerifyTicketResponseDTO
 {
+    [Required]
     public bool IsCorrect { get; set; }
 }

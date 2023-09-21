@@ -9,7 +9,10 @@ public class SignTicketRequestDTO
 
 public class SignTicketResponseDTO
 {
+    [Required]
     public string Id { get; set; }
+
+    [Required]
     public string Signature { get; set; }
 }
 
