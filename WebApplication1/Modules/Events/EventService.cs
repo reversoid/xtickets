@@ -1,4 +1,4 @@
-﻿namespace XTickets.Modules.Event;
+﻿namespace XTickets.Modules.Events;
 
 
 public interface IEventService

@@ -1,4 +1,4 @@
-﻿namespace XTickets.Modules.Event.DTO;
+﻿namespace XTickets.Modules.Events.DTO;
 
 public class EditTicketsRequestDTO
 {

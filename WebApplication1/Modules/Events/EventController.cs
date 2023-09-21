@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using XTickets.Modules.Event.DTO;
+using XTickets.Modules.Events.DTO;
 
-namespace XTickets.Modules.Event;
+namespace XTickets.Modules.Events;
 
 
 
