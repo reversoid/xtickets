@@ -1,17 +1,17 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using XTickets.Modules.Tickets.DTO;
 
-
-namespace XTickets.Modules.Tickets.DTO;
+namespace XTickets.Modules.Tickets;
 
 
 
 [Route("api/[controller]")]
 [ApiController]
-public class TicketsController : ControllerBase
+public class TicketController : ControllerBase
 {
     private readonly ITicketService _ticketService;
 
-    public TicketsController(ITicketService ticketService)
+    public TicketController(ITicketService ticketService)
     {
         _ticketService = ticketService;
     }
@@ -24,7 +24,7 @@ public class TicketsController : ControllerBase
     }
 
     [HttpPost("verify")]
-    public async Task<ActionResult<VerifyTicketResponseDTO>> VerifyTicket(VerifyTicketReqestDTO dto)
+    public async Task<ActionResult<VerifyTicketResponseDTO>> VerifyTicket(VerifyTicketRequestDTO dto)
     {
         bool isCorrect = _ticketService.ValidateTicket(dto.Id, dto.Signature);
 

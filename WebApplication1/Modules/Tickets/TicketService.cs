@@ -53,4 +53,9 @@ public class TicketService : ITicketService
 
         return ecdsa.VerifyData(ticketData, signatureBytes, _hashAlgorythm);
     }
+
+    public void SendTicket(int fromUserId, int toUserId, string ticketId)
+    {
+        throw new NotImplementedException();
+    }
 }

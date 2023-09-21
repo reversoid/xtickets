@@ -2,16 +2,18 @@
 using System.ComponentModel.DataAnnotations;
 
 namespace XTickets.Modules.Tickets.DTO;
-public class SignTicketRequestDTO
+
+public class VerifyTicketRequestDTO
 {
     [Required]
     public string Id { get; set; }
-}
 
-public class SignTicketResponseDTO
-{
-    public string Id { get; set; }
+    [Required]
+    [Base64]
     public string Signature { get; set; }
 }
 
-
+public class VerifyTicketResponseDTO
+{
+    public bool IsCorrect { get; set; }
+}

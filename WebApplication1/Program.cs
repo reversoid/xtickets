@@ -10,7 +10,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 
 builder.Services.AddSingleton<IKeyGenerator, KeyGenerator>();
-builder.Services.AddSingleton<ITicketService, TicketService>();
+builder.Services.AddSingleton<ITicketService, AuthService>();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
